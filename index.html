@@ -3,99 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Live Streaming</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Today's Live Match</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-section {
+            width: 80%;
+            margin: 20px 0;
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            height: auto;
+        }
+        .ad-section {
+            width: 80%;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .ad {
+            width: 100%;
+            height: 90px;
+            background-color: #ccc;
+            line-height: 90px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="ad ad-top">Top Ad</div>
-        <div class="main-content">
-            <div class="ad ad-left">Left Ad</div>
-            <div class="player-container">
-                <video id="liveStream" controls>
-                    <source src="your-video-source.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="ad ad-right">Right Ad</div>
+        <!-- Ad Sections -->
+        <div class="ad-section">
+            <div class="ad"><script type="text/javascript">
+	atOptions = {
+		'key' : '1daf3f11501720dfed2a6f19067e0dc9',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/1daf3f11501720dfed2a6f19067e0dc9/invoke.js"></script></div>
         </div>
-        <div class="ad ad-bottom">Bottom Ad</div>
+        <div class="ad-section">
+            <div class="ad"><script type="text/javascript">
+	atOptions = {
+		'key' : '1daf3f11501720dfed2a6f19067e0dc9',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/1daf3f11501720dfed2a6f19067e0dc9/invoke.js"></script></div>
+        </div>
+        <!-- Video Section -->
+        <div class="video-section">
+            <video class="video" controls>
+                <source src="https://lnc-bein.tubi.video/playlist.m3u8" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Ad Sections -->
+        <div class="ad-section">
+            <div class="ad"><script type="text/javascript">
+	atOptions = {
+		'key' : '1daf3f11501720dfed2a6f19067e0dc9',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/1daf3f11501720dfed2a6f19067e0dc9/invoke.js"></script></div>
+        </div>
+        <div class="ad-section">
+            <div class="ad"><script type="text/javascript">
+	atOptions = {
+		'key' : '1daf3f11501720dfed2a6f19067e0dc9',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/1daf3f11501720dfed2a6f19067e0dc9/invoke.js"></script></div>
+        </div>
+     
+        <!-- Add more ad sections as needed -->
     </div>
-    <script src="script.js"></script>
 </body>
-</html><style>body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.ad {
-    background-color: #ddd;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px 0;
-}
-
-.ad-top {
-    width: 100%;
-    height: 100px;
-}
-
-.ad-bottom {
-    width: 100%;
-    height: 100px;
-}
-
-.main-content {
-    display: flex;
-    width: 100%;
-}
-
-.ad-left, .ad-right {
-    background-color: #ddd;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100%;
-    padding: 10px;
-}
-
-.player-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    margin: 0 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-video {
-    max-width: 100%;
-    height: auto;
-}</style><script>// JavaScript can be used to handle more complex logic such as ad rotations, video controls, analytics, etc.
-// This is a placeholder for any future JavaScript functionality you might want to add.
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Page loaded. Ready to add functionality.");
-});</script>
+</html>
