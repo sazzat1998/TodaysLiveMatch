@@ -3,107 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today's Live Match</title>
+    <title>Sports Streaming</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .video-section {
-            width: 80%;
-            margin: 20px 0;
-            position: relative;
-        }
-        .video {
-            width: 100%;
-            height: auto;
-        }
-        .ad-section {
-            width: 468px;
-            height: 60px;
-            margin: 10px 0;
-            padding: 10px;
             background-color: #f0f0f0;
-            border: 1px solid #ddd;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
             text-align: center;
         }
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .streaming-section {
+            flex: 3;
+            padding: 20px;
+            background-color: #fff;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .ad-section {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
         .ad {
-            width: 468px;
-            height: 60px;
-            background-color: #ccc;
-            line-height: 60px;
-            color: #333;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .video-frame {
+            width: 100%;
+            height: 500px;
+            background-color: #000;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Ad Sections -->
-        <div class="ad-section">
-            <div class="ad"><script type="text/javascript">
-	atOptions = {
-		'key' : '8fd40c0eec9a7cf19d10a10f5592e289',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/8fd40c0eec9a7cf19d10a10f5592e289/invoke.js"></script></div>
-        </div>
-        <div class="ad-section">
-            <div class="ad"><script type="text/javascript">
-	atOptions = {
-		'key' : '8fd40c0eec9a7cf19d10a10f5592e289',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/8fd40c0eec9a7cf19d10a10f5592e289/invoke.js"></script></div>
-        </div>
-        <!-- Video Section -->
-        <div class="video-section">
-            <video class="video" controls>
-                <source src="https://lnc-bein.tubi.video/playlist.m3u8" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
 
-        <!-- Ad Sections -->
-        <div class="ad-section">
-            <div class="ad"><script type="text/javascript">
-	atOptions = {
-		'key' : '8fd40c0eec9a7cf19d10a10f5592e289',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/8fd40c0eec9a7cf19d10a10f5592e289/invoke.js"></script></div>
+<header>
+    <h1>Today's Live Match</h1>
+</header>
+
+<main>
+    <div class="streaming-section">
+        <h2>Live Stream</h2>
+        <div class="video-frame">
+            <!-- Embed your video stream here -->
+            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://lnc-bein.tubi.video/playlist.m3u8" title="Today Live Match" width="560"></iframe>
         </div>
-        <div class="ad-section">
-            <div class="ad"><script type="text/javascript">
-	atOptions = {
-		'key' : '8fd40c0eec9a7cf19d10a10f5592e289',
-		'format' : 'iframe',
-		'height' : 60,
-		'width' : 468,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/8fd40c0eec9a7cf19d10a10f5592e289/invoke.js"></script></div>
-        </div>
-     
-        <!-- Add more ad sections as needed -->
     </div>
+    <aside class="ad-section">
+        <h2>Advertisements</h2>
+        <div class="ad">
+            <script type="text/javascript">
+	atOptions = {
+		'key' : '50b8297118ce92b960acb74ce8543e63',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/50b8297118ce92b960acb74ce8543e63/invoke.js"></script>
+        </div>
+        <div class="ad">
+          <script type="text/javascript">
+	atOptions = {
+		'key' : '50b8297118ce92b960acb74ce8543e63',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/50b8297118ce92b960acb74ce8543e63/invoke.js"></script>
+        </div>
+        <div class="ad">
+          <script type="text/javascript">
+	atOptions = {
+		'key' : '50b8297118ce92b960acb74ce8543e63',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/50b8297118ce92b960acb74ce8543e63/invoke.js"></script>
+        </div>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 Today's Live Match. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
